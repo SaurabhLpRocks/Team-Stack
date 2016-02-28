@@ -1,0 +1,45 @@
+<!doctype HTML>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+    <script src="/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/systemjs/dist/system.src.js"></script>
+    <script src="/rxjs/bundles/Rx.js"></script>
+    <script src="/angular2/bundles/http.dev.js"></script>
+    <script src="/angular2/bundles/angular2.dev.js"></script>
+    <script src="/angular2/bundles/upgrade.dev.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>-->
+    <base href="/"> 
+    <title>Team-Stack</title>
+</head>
+
+<body>
+
+    <app>Loading......</app>
+
+    <script>
+        System.config({
+            defaultJSExtensions: true,
+            packages: {
+                app: {
+                    defaultExtension: 'js'
+                },
+            },
+            paths: {
+                'angular2/upgrade': '../node_modules/angular2/upgrade'
+            },
+            // map: {
+            //     'ng2-bootstrap': '/ng2-bootstrap'
+            // }   
+        });
+        System.import('/rxjs/operator/map');
+        System.import('/stack-bootstrap');
+    </script>
+</body>
+
+</html>

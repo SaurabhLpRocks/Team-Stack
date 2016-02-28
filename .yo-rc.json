@@ -1,0 +1,19 @@
+{
+  "generator-nova": {
+    "version": "0.0.2",
+    "filters": {
+      "backend": "mongo",
+      "reload": "livereload",
+      "ngStorage": true,
+      "ngResource": true,
+      "ngSanitize": true,
+      "ngAnimate": true,
+      "hasDocs": true,
+      "sassdoc": true,
+      "apidoc": true,
+      "electron": true,
+      "sockets": true,
+      "auth": true
+    }
+  }
+}
